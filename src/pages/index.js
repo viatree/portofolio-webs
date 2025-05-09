@@ -1,7 +1,7 @@
 "use client";
 import Image from "next/image";
 import { FaInstagram, FaDiscord, FaGithub, FaLinkedin } from "react-icons/fa6";
-import {StickyScrollRevealDemo} from "../components/stickyScroll";
+import {StickyScrollRevealDemo} from "../components/StickyScroll";
 
 
 export default function Home() {

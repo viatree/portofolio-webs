@@ -5,58 +5,119 @@ import { StickyScroll } from "../components/ui/sticky-scroll-reveal";
 
 const content = [
   {
-    title: "Collaborative Editing",
-    description:
-      "Work together in real time with your team, clients, and stakeholders. Collaborate on documents, share ideas, and make decisions quickly. With our platform, you can streamline your workflow and increase productivity.",
+    title: "Web Designer",
+    description: (
+      <div className="flex flex-wrap gap-2">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" className="h-25 w-20" alt="html5 logo" />
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" className="h-25 w-20" alt="css3 logo" />
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg" className="h-25 w-20" alt="bootstrap logo" />
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jquery/jquery-original.svg" className="h-25 w-20" alt="jquery logo" />
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" className="h-25 w-20" alt="javascript logo" />
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" className="h-25 w-20" alt="react logo" />
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/wordpress/wordpress-original.svg" className="h-25 w-20" alt="wordpress logo" />
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/threejs/threejs-original.svg" className="h-25 w-20" alt="threejs logo" />
+      </div>
+    ),
     content: (
-      <div
-        className="flex h-full w-full items-center justify-center bg-[linear-gradient(to_bottom_right,var(--cyan-500),var(--emerald-500))] text-white">
+      <div className="flex h-full w-full items-center justify-center bg-[linear-gradient(to_bottom_right,var(--cyan-500),var(--emerald-500))] text-white">
         Collaborative Editing
       </div>
     ),
   },
+  
   {
-    title: "Real time changes",
-    description:
-      "See changes as they happen. With our platform, you can track every modification in real time. No more confusion about the latest version of your project. Say goodbye to the chaos of version control and embrace the simplicity of real-time updates.",
-    content: (
-      <div className="flex h-full w-full items-center justify-center text-white">
-        <img
-          src="/linear.webp"
-          width={300}
-          height={300}
-          className="h-full w-full object-cover"
-          alt="linear board demo" />
+    title: "Fullstack Developer",
+    description: (
+      <div className="flex flex-wrap gap-2">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg" className="h-25 w-20"alt="nextjs logo" />
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/androidstudio/androidstudio-original.svg" className="h-25 w-20"alt="androidstudio logo" />
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/firebase/firebase-plain.svg" className="h-25 w-20"alt="firebase logo" />
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" className="h-25 w-20"alt="mysql logo" />
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sqlite/sqlite-original.svg" className="h-25 w-20"alt="sqlite logo" />
+       
       </div>
     ),
-  },
-  {
-    title: "Version control",
-    description:
-      "Experience real-time updates and never stress about version control again. Our platform ensures that you're always working on the most recent version of your project, eliminating the need for constant manual updates. Stay in the loop, keep your team aligned, and maintain the flow of your work without any interruptions.",
     content: (
-      <div
-        className="flex h-full w-full items-center justify-center bg-[linear-gradient(to_bottom_right,var(--orange-500),var(--yellow-500))] text-white">
+      <div className="flex h-full w-full items-center justify-center bg-[linear-gradient(to_bottom_right,var(--orange-500),var(--yellow-500))] text-white">
         Version control
       </div>
     ),
   },
   {
-    title: "Running out of content",
-    description:
-      "Experience real-time updates and never stress about version control again. Our platform ensures that you're always working on the most recent version of your project, eliminating the need for constant manual updates. Stay in the loop, keep your team aligned, and maintain the flow of your work without any interruptions.",
-    content: (
-      <div
-        className="flex h-full w-full items-center justify-center bg-[linear-gradient(to_bottom_right,var(--cyan-500),var(--emerald-500))] text-white">
-        Running out of content
+    title: "UI/UX Designer",
+    description: (
+      <div className="flex flex-wrap gap-2">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/canva/canva-original.svg" className="h-25 w-20"alt="canva logo" />
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg" className="h-25 w-20"alt="figma logo" />
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/xd/xd-plain.svg" className="h-25 w-20"alt="xd logo" />
       </div>
     ),
   },
+
+  {
+    title: "CI/CD",
+    description: (
+      <div className="flex flex-wrap gap-2">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/npm/npm-original-wordmark.svg" className="h-25 w-20"alt="npm logo" />
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" className="h-25 w-20"alt="git logo" />
+         <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" className="h-25 w-20"alt="github logo" />
+           <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/gitlab/gitlab-original.svg" className="h-25 w-20"alt="gitlab logo" />
+      </div>
+    ),
+    content: (
+      <div className="flex h-full w-full items-center justify-center bg-[linear-gradient(to_bottom_right,var(--cyan-500),var(--emerald-500))] text-white">
+        Collaborative Editing
+      </div>
+    ),
+  },
+  {
+    title: "Others",
+    description: (
+      <div className="flex flex-wrap items-center gap-2">
+        {/* Spreadsheet */}
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/google/google-original.svg" className="h-8 w-8" alt="google sheets logo" />
+  
+        {/* Tailwind */}
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-plain.svg" className="h-8 w-8" alt="tailwind logo" />
+  
+        {/* Wireframes (Figma as proxy) */}
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg" className="h-8 w-8" alt="figma (wireframe) logo" />
+  
+        {/* Operating System (Linux example) */}
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-original.svg" className="h-8 w-8" alt="linux logo" />
+  
+        {/* Networking (use generic network icon SVG or FontAwesome if available) */}
+        <img src="https://www.svgrepo.com/show/426874/network-networking.svg" className="h-8 w-8" alt="network icon" />
+  
+        {/* CMD / Terminal */}
+        <img src="https://www.svgrepo.com/show/331760/terminal.svg" className="h-8 w-8" alt="terminal icon" />
+      </div>
+    ),
+    content: (
+      <div className="flex h-full w-full items-center justify-center bg-[linear-gradient(to_bottom_right,var(--cyan-500),var(--emerald-500))] text-white">
+        Collaborative Tools
+      </div>
+    ),
+  },
+  
 ];
+
 export function StickyScrollRevealDemo() {
   return (
-    <div className="w-full py-4 md:px-16 lg:px-24 xl:px-44">
+    <div className="w-full w-screen py-16 ">
+      {/* Judul */}
+      <h1 className="text-3xl font-bold text-left mb-4 text-[var(--color-text)]  md:px-16 lg:px-24 xl:px-44">
+       Technologies I use.
+      </h1>
+
+      {/* Keterangan */}
+      <h2 className="text-left text-[var(--color-text)] md:px-16 lg:px-24 xl:px-44 text-[24px]">
+       Over the years, I have worked with a variety of technologies. Here are some of the technologies I have experience with:
+      </h2>
+
+      {/* Sticky Scroll Section */}
       <StickyScroll content={content} />
     </div>
   );
 }
+
