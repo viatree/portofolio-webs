@@ -1,8 +1,8 @@
 "use client";
 import Image from "next/image";
 import { FaInstagram, FaDiscord, FaGithub, FaLinkedin } from "react-icons/fa6";
-import {StickyScrollRevealDemo} from "../components/StickyScroll";
-
+import { StickyScrollRevealDemo } from "../components/StickyScroll";
+import { HeroParallaxDemo } from "../components/HeroParallax";
 
 export default function Home() {
   return (
@@ -24,14 +24,12 @@ export default function Home() {
           <h1 className="text-[3rem] font-extrabold">Via Tree Amay Erlikasna S</h1>
           <p className="mt-2 text-lg">I have the ability to work collaboratively with cross-functional teams and communicate effectively with designers and backend developers. Furthermore, I always keep up with the latest trends and developments in the world of programming to stay up-to-date, and I have a strong desire to learn and upgrade my knowledge. I am enthusiastic about new things.</p>
           {/* Ikon Sosial Media */}
-          {/* Ikon Sosial Media */}
           <div className="flex gap-3 mt-4">
             <a className="border-2 border-black rounded-full p-2 hover:bg-black hover:text-white transition" href="#" aria-label="Instagram"><FaInstagram /></a>
             <a className="border-2 border-black rounded-full p-2 hover:bg-black hover:text-white transition" href="#" aria-label="GitHub"><FaGithub /></a>
             <a className="border-2 border-black rounded-full p-2 hover:bg-black hover:text-white transition" href="#" aria-label="LinkedIn"><FaLinkedin /></a>
             <a className="border-2 border-black rounded-full p-2 hover:bg-black hover:text-white transition" href="#" aria-label="Discord"><FaDiscord /></a>
           </div>
-
 
           {/* Statistik */}
           <div className="mt-6 grid grid-cols-3  max-w-lg">
@@ -68,11 +66,10 @@ export default function Home() {
               </ul>
             </div>
           </div>
-         
         </div>
       </div>
-      <StickyScrollRevealDemo/>
+      <StickyScrollRevealDemo />
+      <HeroParallaxDemo />
     </div>
-    
   );
 }

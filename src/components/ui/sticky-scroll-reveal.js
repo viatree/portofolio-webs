@@ -1,63 +1,59 @@
 "use client";
 import React, { useEffect, useRef, useState } from "react";
-import { useMotionValueEvent, useScroll } from "motion/react";
-import { motion } from "motion/react";
+import { motion } from "framer-motion";
 import { cn } from "@/lib/utils";
 
 export const StickyScroll = ({ content, contentClassName }) => {
   const [activeCard, setActiveCard] = useState(0);
   const ref = useRef(null);
 
-  const { scrollYProgress } = useScroll({
-    container: ref,
-    offset: ["start start", "end start"],
-  });
-
   const cardLength = content.length;
 
-  useMotionValueEvent(scrollYProgress, "change", (latest) => {
-    const cardsBreakpoints = content.map((_, index) => index / cardLength);
-    const closestBreakpointIndex = cardsBreakpoints.reduce((acc, breakpoint, index) => {
-      const distance = Math.abs(latest - breakpoint);
-      if (distance < Math.abs(latest - cardsBreakpoints[acc])) {
-        return index;
-      }
-      return acc;
-    }, 0);
-    setActiveCard(closestBreakpointIndex);
-  });
-
-  const backgroundColors = [
-    "#76a77b",
-  "rgba(79, 161, 88, 0.25)",
-  "rgba(73, 160, 82, 0.5)", 
-  "rgba(55, 158, 65, 0.5)",  
+  const backgroundImages = [
+    "/images/web.png",
+    "/images/web.png",
+    "/images/uiux.png",
+    "/images/cicd.png",
   ];
 
-  const linearGradients = [
-    "linear-gradient(to bottom right, #06b6d4, #10b981)",
-    "linear-gradient(to bottom right, #ec4899, #6366f1)",
-    "linear-gradient(to bottom right, #f97316, #eab308)",
-  ];
-
-  const [backgroundGradient, setBackgroundGradient] = useState(linearGradients[0]);
+  const [backgroundImage, setBackgroundImage] = useState(backgroundImages[0]);
 
   useEffect(() => {
-    setBackgroundGradient(linearGradients[activeCard % linearGradients.length]);
+    setBackgroundImage(backgroundImages[activeCard % backgroundImages.length]);
   }, [activeCard]);
+
+  // Gunakan manual scroll detector
+  useEffect(() => {
+    const container = ref.current;
+    if (!container) return;
+
+    const handleScroll = () => {
+      const scrollTop = container.scrollTop;
+      const scrollHeight = container.scrollHeight - container.clientHeight;
+      const sectionHeight = scrollHeight / cardLength;
+
+      const index = Math.floor(scrollTop / sectionHeight);
+      if (index !== activeCard && index >= 0 && index < cardLength) {
+        setActiveCard(index);
+      }
+    };
+
+    container.addEventListener("scroll", handleScroll);
+    return () => container.removeEventListener("scroll", handleScroll);
+  }, [activeCard, cardLength]);
 
   return (
     <motion.div
       animate={{
-        backgroundColor: backgroundColors[activeCard % backgroundColors.length],
+        backgroundColor: "transparent",
       }}
-      className="relative flex h-[30rem] justify-center  overflow-y-auto text-[16px]"
+      className="relative flex h-[20rem] justify-center overflow-y-auto text-[16px] scroll-smooth"
       ref={ref}
     >
-      <div className="relative flex items-start ">
+      <div className="relative flex items-start">
         <div className="max-w-xl">
           {content.map((item, index) => (
-            <div key={item.title + index} className="my-20">
+            <div key={item.title + index} className="my-20 snap-start">
               <motion.h2
                 initial={{ opacity: 0 }}
                 animate={{ opacity: activeCard === index ? 1 : 0.3 }}
@@ -65,27 +61,35 @@ export const StickyScroll = ({ content, contentClassName }) => {
               >
                 {item.title}
               </motion.h2>
-              <motion
+              <motion.div
                 initial={{ opacity: 0 }}
                 animate={{ opacity: activeCard === index ? 1 : 0.3 }}
                 className="text-kg mt-10 w-full text-slate-300"
               >
                 {item.description}
-              </motion>
+              </motion.div>
             </div>
           ))}
-          <div className="h-80" />
+          <div className="h-10" />
         </div>
       </div>
+
+      {/* Sticky Background Image */}
       <div
-        style={{ background: backgroundGradient }}
+        style={{
+          backgroundImage: `url(${backgroundImage})`,
+          backgroundSize: "cover",
+          backgroundPosition: "center",
+        }}
         className={cn(
           "sticky top-10 hidden h-80 w-160 overflow-hidden rounded-md bg-white lg:block",
           contentClassName
         )}
       >
-        {content[activeCard].content ?? null}
+        {content[activeCard]?.content ?? null}
       </div>
     </motion.div>
   );
 };
+
+export default StickyScroll;
