@@ -5,98 +5,81 @@ import { HeroParallax } from "./ui/hero-parallax";
 export function HeroParallaxDemo() {
   return <HeroParallax products={products} />;
 }
+
 export const products = [
   {
-    title: "Moonbeam",
-    link: "https://gomoonbeam.com",
-    thumbnail:
-      "https://aceternity.com/images/products/thumbnails/new/moonbeam.png",
+    title: "Fetch API",
+    link: "https://fullapi-ga2a.vercel.app/",
+    thumbnail: "/images/api.png",
   },
   {
-    title: "Cursor",
-    link: "https://cursor.so",
-    thumbnail:
-      "https://aceternity.com/images/products/thumbnails/new/cursor.png",
+    title: "GBI Rock Malaysia",
+    link: "https://rock-church.vercel.app/home",
+    thumbnail: "/images/rock.png",
   },
   {
-    title: "Rogue",
-    link: "https://userogue.com",
-    thumbnail:
-      "https://aceternity.com/images/products/thumbnails/new/rogue.png",
-  },
-
-  {
-    title: "Editorially",
-    link: "https://editorially.org",
-    thumbnail:
-      "https://aceternity.com/images/products/thumbnails/new/editorially.png",
+    title: "Compro Mega Putra",
+    link: "https://compro-mp.vercel.app/",
+    thumbnail: "/images/mp.png",
   },
   {
-    title: "Editrix AI",
-    link: "https://editrix.ai",
-    thumbnail:
-      "https://aceternity.com/images/products/thumbnails/new/editrix.png",
+    title: "Housings",
+    link: "https://housings.vercel.app/",
+    thumbnail: "/images/residence.png",
   },
   {
-    title: "Pixel Perfect",
-    link: "https://app.pixelperfect.quest",
-    thumbnail:
-      "https://aceternity.com/images/products/thumbnails/new/pixelperfect.png",
-  },
-
-  {
-    title: "Algochurn",
-    link: "https://algochurn.com",
-    thumbnail:
-      "https://aceternity.com/images/products/thumbnails/new/algochurn.png",
+    title: "Train Schedules",
+    link: "https://trainschedules.vercel.app/",
+    thumbnail: "/images/train.png",
   },
   {
-    title: "Aceternity UI",
-    link: "https://ui.aceternity.com",
-    thumbnail:
-      "https://aceternity.com/images/products/thumbnails/new/aceternityui.png",
+    title: "Eat Sushi",
+    link: "https://sushi-orcin-two.vercel.app/",
+    thumbnail: "/images/sushi.png",
   },
   {
-    title: "Tailwind Master Kit",
-    link: "https://tailwindmasterkit.com",
-    thumbnail:
-      "https://aceternity.com/images/products/thumbnails/new/tailwindmasterkit.png",
+    title: "UI/UX Mega Putra",
+    link: "https://compro-mp.vercel.app/",
+    thumbnail: "/images/uiuxmp.png",
   },
   {
-    title: "SmartBridge",
-    link: "https://smartbridgetech.com",
-    thumbnail:
-      "https://aceternity.com/images/products/thumbnails/new/smartbridge.png",
+    title: "Vis Movies",
+    link: "https://vismovies.vercel.app/",
+    thumbnail: "/images/movies.png",
+  },
+  {
+    title: "CMS Programs",
+    link: "https://programs-cms.netlify.app/#/dashboard",
+    thumbnail: "/images/contract.png",
+  },
+  {
+    title: "Kawaii Pet Shop",
+    link: "https://66bf34af2e797708e0e44d7d--regal-phoenix-ebc719.netlify.app/",
+    thumbnail: "/images/self project.png",
   },
   {
     title: "Renderwork Studio",
     link: "https://renderwork.studio",
-    thumbnail:
-      "https://aceternity.com/images/products/thumbnails/new/renderwork.png",
+    thumbnail: "/images/elearn.png",
   },
-
   {
     title: "Creme Digital",
     link: "https://cremedigital.com",
-    thumbnail:
-      "https://aceternity.com/images/products/thumbnails/new/cremedigital.png",
+    thumbnail: "/images/ajinomoto.png",
   },
   {
-    title: "Golden Bells Academy",
-    link: "https://goldenbellsacademy.com",
-    thumbnail:
-      "https://aceternity.com/images/products/thumbnails/new/goldenbellsacademy.png",
+    title: "Kawaii Pet Shop",
+    link: "https://66bf34af2e797708e0e44d7d--regal-phoenix-ebc719.netlify.app/",
+    thumbnail: "/images/self project.png",
   },
   {
     title: "Invoker Labs",
     link: "https://invoker.lol",
-    thumbnail:
-      "https://aceternity.com/images/products/thumbnails/new/invoker.png",
+    thumbnail: "/images/intern.png",
   },
   {
-    title: "E Free Invoice",
-    link: "https://efreeinvoice.com",
-    thumbnail:
-      "https://aceternity.com/images/products/thumbnails/new/efreeinvoice.png",
+    title: "Belle Design Studio",
+    link: "https://freelance-belle-design.vercel.app/",
+    thumbnail: "/images/freelance.png",
   },
 ];

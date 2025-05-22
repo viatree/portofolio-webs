@@ -2,8 +2,6 @@
 import React from "react";
 import { motion, useScroll, useTransform, useSpring } from "motion/react";
 
-
-
 export const HeroParallax = ({
   products
 }) => {

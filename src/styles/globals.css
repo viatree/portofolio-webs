@@ -154,7 +154,7 @@ body {
   display: none;
 }
 html {
-  scrollbar-width: none; /* Firefox */
+  /* scrollbar-width: none; Firefox */
   -ms-overflow-style: none; /* IE and Edge */
 }
 

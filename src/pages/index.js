@@ -9,7 +9,7 @@ export default function Home() {
     <div className="flex flex-col items-center justify-center md:px-16 lg:px-24 xl:px-44 pt-30 bg-[var(--backg)] text-[var(--color-text)]">
       <div className=" w-full grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
         <div className="relative">
-          <div className=" overflow-hidden relative ">
+          <div className=" relative ">
             <Image
               src="/images/me.png"
               alt="Hero"
