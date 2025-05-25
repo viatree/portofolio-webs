@@ -3,7 +3,7 @@
 :root {
   --background: oklch(1 0 0);
   --foreground: oklch(0.13 0.028 261.692); 
-  --hover: #C4E538;
+  --hover: #2e8d36;
     --beige: #FAF3E0;
     --text: #081f1c;
     --backg:#76a77b;
@@ -49,6 +49,7 @@
   --font-mono: var(--font-geist-mono);
   --color-hover: var(--hover);
   --color-beige: var(--beige);
+  --color-backg2: var(--backg2);
   --color-text: var(--text);
   --color-primary: var(--primary);
   --color-backg: var(--backg);

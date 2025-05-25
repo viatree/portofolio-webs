@@ -62,17 +62,17 @@ const content = [
     description: (
       <div className="grid grid-cols-3 items-center gap-6">
         {/* Spreadsheet */}
-        <img src="/images/os.png" className="h-auto w-50" alt="Operating System" />
+        <img src="/images/icons/os.png" className="h-auto w-50" alt="Operating System" />
         {/* Tailwind */}
-        <img src="/images/jira.png" className="h-auto w-50" alt="tailwind logo" />
+        <img src="/images/icons/jira.png" className="h-auto w-50" alt="tailwind logo" />
         {/* Networking (use generic network icon SVG or FontAwesome if available) */}
-        <img src="images/trello.png" className="h-auto w-50" alt="network icon" />
+        <img src="images/icons/trello.png" className="h-auto w-50" alt="network icon" />
         {/* Wireframes (Figma as proxy) */}
-        <img src="/images/office.png" className="h-auto w-50" alt="figma (wireframe) logo" />
+        <img src="/images/icons/office.png" className="h-auto w-50" alt="figma (wireframe) logo" />
         {/* Operating System (Linux example) */}
-        <img src="/images/jenkins.png" className="h-auto w-50" alt="linux logo" />
+        <img src="/images/icons/jenkins.png" className="h-auto w-50" alt="linux logo" />
         {/* CMD / Terminal */}
-        <img src="images/cmd.png" className="h-20 w-auto" alt="terminal icon" />
+        <img src="images/icons/cmd.png" className="h-20 w-auto" alt="terminal icon" />
       </div>
     ),
   },

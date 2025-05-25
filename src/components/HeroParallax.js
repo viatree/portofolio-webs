@@ -58,24 +58,24 @@ export const products = [
     thumbnail: "/images/self project.png",
   },
   {
-    title: "Renderwork Studio",
-    link: "https://renderwork.studio",
-    thumbnail: "/images/elearn.png",
+    title: "UI/UX Mega Putra",
+    link: "https://compro-mp.vercel.app/",
+    thumbnail: "/images/uiuxmp.png",
   },
-  {
-    title: "Creme Digital",
-    link: "https://cremedigital.com",
-    thumbnail: "/images/ajinomoto.png",
+    {
+    title: "Vis Movies",
+    link: "https://vismovies.vercel.app/",
+    thumbnail: "/images/movies.png",
   },
   {
     title: "Kawaii Pet Shop",
     link: "https://66bf34af2e797708e0e44d7d--regal-phoenix-ebc719.netlify.app/",
     thumbnail: "/images/self project.png",
   },
-  {
-    title: "Invoker Labs",
-    link: "https://invoker.lol",
-    thumbnail: "/images/intern.png",
+{
+    title: "Eat Sushi",
+    link: "https://sushi-orcin-two.vercel.app/",
+    thumbnail: "/images/sushi.png",
   },
   {
     title: "Belle Design Studio",
