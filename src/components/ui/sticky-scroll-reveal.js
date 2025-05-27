@@ -22,7 +22,6 @@ export const StickyScroll = ({ content, contentClassName }) => {
     setBackgroundImage(backgroundImages[activeCard % backgroundImages.length]);
   }, [activeCard]);
 
-  // Gunakan manual scroll detector
   useEffect(() => {
     const container = ref.current;
     if (!container) return;
@@ -57,14 +56,14 @@ export const StickyScroll = ({ content, contentClassName }) => {
               <motion.h2
                 initial={{ opacity: 0 }}
                 animate={{ opacity: activeCard === index ? 1 : 0.3 }}
-                className="text-4xl font-bold text-slate-100"
+                className="text-4xl font-bold text-[var(--color-text)]"
               >
                 {item.title}
               </motion.h2>
               <motion.div
                 initial={{ opacity: 0 }}
                 animate={{ opacity: activeCard === index ? 1 : 0.3 }}
-                className="text-kg mt-10 w-full text-slate-300"
+                className="mt-10 w-full text-[var(--color-text)]"
               >
                 {item.description}
               </motion.div>

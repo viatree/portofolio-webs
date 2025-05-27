@@ -29,35 +29,36 @@ export const Timeline = ({ data }) => {
     >
       {/* Profile & Welcome Section */}
       <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between py-6 px-4 md:px-8 lg:px-10">
-     <div className="flex flex-col items-center mb-10 md:mb-0 relative">
-  {/* Background Shape */}
-  <div className="absolute bg-green-300/70 w-44 h-44 rounded-full -top-2 left-1/2 -translate-x-1/2 -z-10" />
+        <div className="flex flex-col items-center mb-10 md:mb-0 relative">
+          {/* Background Shape */}
+          <div className="absolute bg-green-300/70 w-44 h-44 rounded-full -top-2 left-1/2 -translate-x-1/2 -z-10" />
 
-  {/* Profile Image */}
-  <img
-    src="images/photoCV.png"
-    alt="Profile"
-    className="w-55 h-55"
-  />
+          {/* Profile Image */}
+          <img
+            src="images/photoCV.png"
+            alt="Profile"
+            className="w-55 h-55"
+          />
 
-  {/* CV Button */}
-  <a
-    href="/cv.pdf"
-    target="_blank"
-    rel="noopener noreferrer"
-    className="px-13 py-2 border border-[var(--color-backg2)] text-white hover:bg-[var(--color-hover)] font-semibold rounded-full shadow text-sm"
-  >
-    Curriculum Vitae (CV)
-  </a>
-</div>
+          {/* CV Button */}
+          <a
+            href="/CV-VIA_TREE_AMAY_ERLIKASNA.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="px-13 py-2 border border-[var(--color-backg2)] text-white hover:bg-[var(--color-hover)] font-semibold rounded-full shadow text-sm text-[var(--color-text)]"
+          >
+            Curriculum Vitae (CV)
+          </a>
+        </div>
 
 
         <div className="text-center md:text-left max-w-xl">
-          <h1 className="text-2xl md:text-4xl font-bold text-black dark:text-white">
+          <h1 className="text-2xl md:text-4xl font-bold text-[var(--color-text)] dark:text-[var(--color-text)]">
             Welcome To my Journey
           </h1>
-          <p className="text-neutral-700 dark:text-neutral-300 text-sm md:text-base mt-2">
-          Dimulai dengan karya saya sebelumnya di bidang IT. Here&apos;s a timeline of my journey.
+          <p className="text-[var(--color-text)] dark:text-[var(--color-text)] text-sm md:text-base mt-2">
+            I am a diligent worker with experience in design and coding. I have learned more about Web developer,UI/UX Designer,Fullstack Developer, IT support technician and many more.
+            I am used to dealing with varied requirements from numerous clients and meeting deadlines and never stop learning and improveing my skills. Here&apos;s a timeline of my journey.
           </p>
         </div>
       </div>
