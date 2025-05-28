@@ -52,42 +52,42 @@ export default function Projects() {
      {
       src: "/images/apps.png",
       category: "UI/UX Design",
-      link: "https://yourwebsite.com/project-uiux3",
+      link: "https://www.figma.com/proto/4Ips3J5hzX4Ma80jVDCqNS/Wireframe?page-id=303%3A117&node-id=305-41811&m=draw&scaling=min-zoom&content-scaling=fixed&starting-point-node-id=304%3A5248&t=6rPHIqrHCW8SKTAN-1",
     },
     {
       src: "/images/thumbnails/api.png",
       category: "Fullstack",
-      link: "https://yourwebsite.com/project-api",
+      link: "https://fullapi-ga2a.vercel.app/",
     },
     {
       src: "/images/uiuxmp.png",
       category: "UI/UX Design",
-      link: "https://yourwebsite.com/project-uiux3",
+      link: "https://www.figma.com/proto/4Ips3J5hzX4Ma80jVDCqNS/Wireframe?page-id=15%3A592&node-id=304-7677&m=draw&scaling=min-zoom&content-scaling=fixed&starting-point-node-id=304%3A8041&t=JP6Hz2Eju2caWMi7-1",
     },
     {
       src: "/images/thumbnails/movies.png",
       category: "Web Design",
-      link: "https://yourwebsite.com/project-movies",
+      link: "https://vismovies.vercel.app/",
     },
     {
       src: "/images/thumbnails/cms.png",
       category: "Fullstack",
-      link: "https://yourwebsite.com/project-cms",
+      link: "https://programs-cms.netlify.app/",
     },
       {
       src: "/images/rock.png",
       category: "UI/UX Design",
-      link: "https://yourwebsite.com/project-uiux3",
+      link: "https://rock-church.vercel.app/",
     },
     {
       src: "/images/thumbnails/gbi.png",
       category: "Web Design",
-      link: "https://yourwebsite.com/project-gbi",
+      link: "https://rock-church.vercel.app/",
     },
      {
       src: "/images/self project.png",
       category: "UI/UX Design",
-      link: "https://yourwebsite.com/project-uiux3",
+      // link: "https://yourwebsite.com/project-uiux3",
     },
   ];
 
