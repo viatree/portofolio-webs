@@ -11,7 +11,7 @@ import {
 
 const Footer = () => {
   return (
-    <footer className="bg-[var(--beige)] text-black py-6 px-8 ">
+    <footer className="bg-[var(--beige)] text-[var(--color-text)] py-6 px-8 ">
       <div className="container mx-auto px-6 md:px-12 lg:px-16 xl:px-20">
         {/* Grid utama */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-10 items-start text-base">

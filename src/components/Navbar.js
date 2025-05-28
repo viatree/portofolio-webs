@@ -77,7 +77,7 @@ const Navbar = () => {
                             <span
                                 className={`uppercase font-bold cursor-pointer transition-all ${
                                     isActive(path)
-                                        ? "border-b-4 border-[var(--color-primary)] pb-1"
+                                        ? "border-b-4 border-[var(--color-hover)] pb-1"
                                         : "opacity-80 hover:opacity-100"
                                 }`}
                             >

@@ -9,18 +9,19 @@ export default function Projects() {
   ];
 
   const allProjects = [
-    { src: "/images/p1.png", category: "Web Designer" },
+    { src: "/images/thumbnails/belle.png", category: "Web Designer" },
     { src: "/images/p2.png", category: "Support" },
     { src: "/images/p3.png", category: "Fullstack Developer " },
     { src: "/images/p4.png", category: "UI/UX Designer" },
     { src: "/images/p3.png", category: "Fullstack Developer " },
     { src: "/images/p2.png", category: "Support" },
     { src: "/images/p4.png", category: "UI/UX Designer" },
-    { src: "/images/p1.png", category: "Web Designer" },
+    { src: "/images/thumbnails/housings.png", category: "Web Designer" },
     { src: "/images/p2.png", category: "Support" },
-    { src: "/images/p1.png", category: "Web Designer" },
+    { src: "/images/thumbnails/sushi.png", category: "Web Designer" },
     { src: "/images/p3.png", category: "Fullstack Developer" },
     { src: "/images/p4.png", category: "UI/UX Designer" },
+      { src: "/images/thumbnails/movies.png", category: "Web Designer" },
   ];
 
   const [selectedCategory, setSelectedCategory] = useState("All");
@@ -76,13 +77,13 @@ export default function Projects() {
         </div>
 
         {/* Grid Layout */}
-        <div className="mt-10 grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 w-auto h-auto">
+        <div className="mt-10 mb-10 grid grid-cols-3 md:grid-cols-2 lg:grid-cols-3 gap-6 w-full h-full">
           {filteredProjects.map((project, index) => (
             <div key={index} className="relative group">
               <img
                 src={project.src}
                 alt={`Project ${index + 1}`}
-                className="w-full h-auto shadow-lg max-w-screen overflow-hidden"
+                className="w-full h-full shadow-lg max-w-screen overflow-hidden"
               />
             </div>
           ))}
