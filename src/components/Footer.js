@@ -22,9 +22,7 @@ const Footer = () => {
               alt="vtaes Logo"
               width={200}
               height={100}
-             
             />
-         
           </div>
 
           {/* Contact Us - tengah */}
@@ -45,8 +43,8 @@ const Footer = () => {
           </div>
 
           {/* Quick Links - kanan */}
-          <div className="flex flex-col items-start space-y-2 text-[var(--color-text)] ">
-            <h3 className="text-lg font-bold mb-2 text-[var(--color-text)]">QUICK LINKS</h3>
+          <div className="flex flex-col items-start space-y-2 text-[var(--color-text)]">
+            <h3 className="text-lg font-bold mb-2">QUICK LINKS</h3>
             <Link href="/index" className="hover:text-[var(--color-lighter)]">About Me</Link>
             <Link href="/Resume" className="hover:text-[var(--color-lighter)]">Services</Link>
             <Link href="/portofolio" className="hover:text-[var(--color-lighter)]">Feed</Link>
@@ -60,10 +58,18 @@ const Footer = () => {
         {/* Social Media dan Copyright */}
         <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0 text-[var(--color-text)]">
           <div className="flex space-x-6">
-            <FaGithub className="text-2xl cursor-pointer hover:text-[var(--color-lighter)]" />
-            <FaDiscord className="text-2xl cursor-pointer hover:text-[var(--color-lighter)]" />
-            <FaInstagram className="text-2xl cursor-pointer hover:text-[var(--color-lighter)]" />
-            <FaLinkedinIn className="text-2xl cursor-pointer hover:text-[var(--color-lighter)]" />
+            <a href="https://github.com/viatree" target="_blank" rel="noopener noreferrer">
+              <FaGithub className="text-2xl cursor-pointer hover:text-[var(--color-lighter)]" />
+            </a>
+            <a href="https://discord.com/channels/addicted9201" target="_blank" rel="noopener noreferrer">
+              <FaDiscord className="text-2xl cursor-pointer hover:text-[var(--color-lighter)]" />
+            </a>
+            <a href="https://www.instagram.com/viatree/" target="_blank" rel="noopener noreferrer">
+              <FaInstagram className="text-2xl cursor-pointer hover:text-[var(--color-lighter)]" />
+            </a>
+            <a href="https://www.linkedin.com/in/vtaes/" target="_blank" rel="noopener noreferrer">
+              <FaLinkedinIn className="text-2xl cursor-pointer hover:text-[var(--color-lighter)]" />
+            </a>
           </div>
           <p className="text-sm">&copy; VTAES. 2024.</p>
         </div>
