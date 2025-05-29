@@ -52,15 +52,24 @@ export const Timeline = ({ data }) => {
         </div>
 
 
-        <div className="text-center md:text-left max-w-xl">
+        <div className="text-center md:text-left max-w-xl py-8">
           <h1 className="text-2xl md:text-4xl font-bold text-[var(--color-text)] dark:text-[var(--color-text)]">
             Welcome To my Journey
           </h1>
-          <p className="text-[var(--color-text)] dark:text-[var(--color-text)] text-sm md:text-base mt-2">
+          <p className="text-[var(--color-text)] dark:text-[var(--color-text)] text-sm md:text-base my-4">
             I am a diligent worker with experience in design and coding. I have learned more about Web developer,UI/UX Designer,Fullstack Developer, IT support technician and many more.
             I am used to dealing with varied requirements from numerous clients and meeting deadlines and never stop learning and improveing my skills. Here&apos;s a timeline of my journey.
           </p>
+          <a
+            href="https://vtaes.my.canva.site/portofolio-creative-vtaes"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-block px-13 py-2 border border-[var(--color-backg2)] text-white hover:bg-[var(--color-hover)] font-semibold rounded-full shadow text-sm text-[var(--color-text)]"
+          >
+            View My Portfolio on Canva
+          </a>
         </div>
+
       </div>
 
       {/* Timeline Items */}
