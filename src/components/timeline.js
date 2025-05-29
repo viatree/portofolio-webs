@@ -91,11 +91,11 @@ export function TimelineDemo() {
             </div>
             <div
               className="flex items-center gap-2 text-md text-[var(--color-text)] md:text-lg dark:text-[var(--color-text)] font-bold">
-              ✅ UI/UX Designer
+              ✅ UI/UX Designer - Synergyxyz Sdn.Bhd
             </div>
             <div
               className="flex items-center gap-2 text-md text-[var(--color-text)] md:text-lg dark:text-[var(--color-text)] font-bold">
-              ✅ Freelancer Wordpress
+              ✅ Freelancer Wordpress - Remotely
             </div>
           </div>
           <div className="grid grid-cols-2 gap-4">
