@@ -11,40 +11,41 @@ import {
 
 const Footer = () => {
   return (
-    <footer className="bg-[var(--beige)] text-[var(--color-text)] py-6 px-8 ">
-      <div className="container mx-auto px-6 md:px-12 lg:px-16 xl:px-20">
-        {/* Grid utama */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-10 items-start text-base">
-          {/* Logo - kiri */}
-          <div className="flex flex-col items-start space-y-4">
+    <footer className="bg-[var(--beige)] text-[var(--color-text)] py-10 px-6">
+      <div className="max-w-screen-xl mx-auto">
+        {/* Grid Utama */}
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
+          {/* Logo */}
+          <div className="flex flex-col items-center md:items-start">
             <Image
               src="/images/logo.png"
               alt="vtaes Logo"
               width={200}
               height={100}
+              className="object-contain"
             />
           </div>
 
-          {/* Contact Us - tengah */}
-          <div className="flex flex-col items-start space-y-3 text-[var(--color-text)]">
-            <h3 className="text-lg font-bold">INFO CONTACT</h3>
-            <div className="flex items-center space-x-3">
-              <FaWhatsapp className="text-2xl" />
-              <p>+6281381376027</p>
+          {/* Kontak */}
+          <div className="flex flex-col space-y-3 items-start text-sm">
+            <h3 className="text-lg font-semibold mb-1">INFO CONTACT</h3>
+            <div className="flex items-center space-x-2">
+              <FaWhatsapp className="text-xl" />
+              <p>+62 813-8137-6027</p>
             </div>
-            <div className="flex items-center space-x-3">
-              <FaWhatsapp className="text-2xl" />
-              <p>+601114859893 (Wa Only)</p>
+            <div className="flex items-center space-x-2">
+              <FaWhatsapp className="text-xl" />
+              <p>+60 111-485-9893 (Wa Only)</p>
             </div>
-            <div className="flex items-center space-x-3">
-              <FaMailBulk className="text-2xl" />
+            <div className="flex items-center space-x-2">
+              <FaMailBulk className="text-xl" />
               <p>Viathree01@gmail.com</p>
             </div>
           </div>
 
-          {/* Quick Links - kanan */}
-          <div className="flex flex-col items-start space-y-2 text-[var(--color-text)]">
-            <h3 className="text-lg font-bold mb-2">QUICK LINKS</h3>
+          {/* Links */}
+          <div className="flex flex-col space-y-2 text-sm items-start">
+            <h3 className="text-lg font-semibold mb-1">QUICK LINKS</h3>
             <Link href="/index" className="hover:text-[var(--color-lighter)]">About Me</Link>
             <Link href="/Resume" className="hover:text-[var(--color-lighter)]">Services</Link>
             <Link href="/portofolio" className="hover:text-[var(--color-lighter)]">Feed</Link>
@@ -52,26 +53,26 @@ const Footer = () => {
           </div>
         </div>
 
-        {/* Garis pemisah */}
-        <div className="border-t border-[var(--color-text)] w-full my-6"></div>
+        {/* Divider */}
+        <div className="w-full border-t border-[var(--color-text)] my-6" />
 
-        {/* Social Media dan Copyright */}
-        <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0 text-[var(--color-text)]">
-          <div className="flex space-x-6">
+        {/* Social & Copy */}
+        <div className="flex flex-col md:flex-row justify-between items-center gap-4 text-sm">
+          <div className="flex space-x-5">
             <a href="https://github.com/viatree" target="_blank" rel="noopener noreferrer">
-              <FaGithub className="text-2xl cursor-pointer hover:text-[var(--color-lighter)]" />
+              <FaGithub className="text-2xl hover:text-[var(--color-lighter)] transition" />
             </a>
             <a href="https://discord.com/channels/addicted9201" target="_blank" rel="noopener noreferrer">
-              <FaDiscord className="text-2xl cursor-pointer hover:text-[var(--color-lighter)]" />
+              <FaDiscord className="text-2xl hover:text-[var(--color-lighter)] transition" />
             </a>
             <a href="https://www.instagram.com/viatree/" target="_blank" rel="noopener noreferrer">
-              <FaInstagram className="text-2xl cursor-pointer hover:text-[var(--color-lighter)]" />
+              <FaInstagram className="text-2xl hover:text-[var(--color-lighter)] transition" />
             </a>
             <a href="https://www.linkedin.com/in/vtaes/" target="_blank" rel="noopener noreferrer">
-              <FaLinkedinIn className="text-2xl cursor-pointer hover:text-[var(--color-lighter)]" />
+              <FaLinkedinIn className="text-2xl hover:text-[var(--color-lighter)] transition" />
             </a>
           </div>
-          <p className="text-sm">&copy; VTAES. 2024.</p>
+          <p className="text-center">&copy; VTAES. 2024. All rights reserved.</p>
         </div>
       </div>
     </footer>

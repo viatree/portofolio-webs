@@ -155,8 +155,28 @@ body {
 ::-webkit-scrollbar {
   display: none;
 }
-html {
-  /* scrollbar-width: none; Firefox */
-  -ms-overflow-style: none; /* IE and Edge */
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  background-color: var(--backg, #f9fafb);
+  color: var(--color-text, #111827);
+  font-family: system-ui, sans-serif;
+    -ms-overflow-style: none; /* IE and Edge */
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  padding-left: 1rem;
+  margin-top: 0.5rem;
+}
+
+li {
+  margin-bottom: 0.25rem;
 }
 
