@@ -6,7 +6,8 @@ import { HeroParallaxDemo } from "../components/HeroParallax";
 
 export default function Home() {
   return (
-    <div className="flex flex-col items-center justify-center md:px-16 lg:px-24 xl:px-44 pt-30 bg-[var(--backg)] text-[var(--color-text)] min-h-screen">
+  <div className="flex flex-col items-center justify-center md:px-16 lg:px-24 xl:px-44 pt-30 bg-[var(--backg)] text-[var(--color-text)] min-h-screen">
+
       <div className="w-full grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
         <div className="relative">
           <Image
@@ -19,15 +20,15 @@ export default function Home() {
         </div>
         {/* KIRI - TEXT */}
         <div>
-          <h1 className="text-[3rem] font-extrabold">Via Tree Amay Erlikasna S</h1>
-          <p className="mt-2 text-lg">
+          <h1 className="text-[3rem] font-extrabold px-4">Via Tree Amay Erlikasna S</h1>
+          <p className="mt-2 text-lg px-4">
             I have the ability to work collaboratively with cross-functional teams and communicate
             effectively with designers and backend developers. Furthermore, I always keep up with the
             latest trends and developments in the world of programming to stay up-to-date, and I have
             a strong desire to learn and upgrade my knowledge. I am enthusiastic about new things.
           </p>
           {/* Ikon Sosial Media */}
-          <div className="flex gap-3 mt-4">
+          <div className="flex gap-3 mt-4 px-4">
             <a
               className="border-2 border-black rounded-full p-2 hover:bg-black hover:text-white transition"
               href="https://www.instagram.com/viatree/"
@@ -67,7 +68,7 @@ export default function Home() {
           </div>
 
           {/* Statistik */}
-          <div className="mt-6 grid grid-cols-1 md:grid-cols-3 max-w-lg gap-6">
+          <div className="mt-6 grid grid-cols-1 md:grid-cols-3 max-w-lg gap-6 px-4">
             <div>
               <h2 className="text-3xl font-bold">Web Designer</h2>
               <ul className="text-sm text-gray-700 mt-2 list-disc list-inside">

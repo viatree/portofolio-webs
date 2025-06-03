@@ -81,7 +81,7 @@ const content = [
 
 export function StickyScrollRevealDemo() {
   return (
-    <div className="w-full w-screen py-16 md:px-16 lg:px-24 xl:px-44">
+    <div className="w-full w-screen py-16 px-4 md:px-16 lg:px-24 xl:px-44">
       {/* Judul */}
       <h1 className="text-3xl font-bold text-left mb-4 text-[var(--color-text)]">
         Technologies I use.
